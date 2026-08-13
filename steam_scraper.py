@@ -115,7 +115,7 @@ def scrape_steam_store(pages_to_scrape=1):
 
 if __name__ == "__main__":
     # Change this number to scrape more pages from the search results
-    pages_to_scrape = 1000
+    pages_to_scrape = 200
     data = scrape_steam_store(pages_to_scrape)
 
     # Export the collected data to a CSV file
