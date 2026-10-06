@@ -1,0 +1,40 @@
+# =========================================
+# 🐍 Environment & Dependencies (Avoid massive layer duplication)
+# =========================================
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Compiled files and caches
+__pycache__/
+*.pyc
+*.pyd
+
+# =========================================
+# 🗑️ Generated, Temporary, and Build Artifacts
+# =========================================
+# Logs, temporary output files
+*.log
+*.tmp
+
+# Test artifacts (if tests generate reports, etc.)
+/tests/coverage/
+
+# Jupyter/Development artifacts (if running a non-notebook-based image)
+.ipynb_checkpoints
+
+# =========================================
+# 🎨 IDE & OS Junk
+# =========================================
+.idea/
+.vscode/
+.DS_Store
+
+# --------------------------------------------------------------------
+# 🚨 Important Notes:
+# 1. DO NOT ignore 'data/' if your container needs the input/output files to run.
+#    If your data needs to persist, you will handle it with Docker Volumes (-v).
+# 2. Keep 'requirements.txt', 'pyproject.toml', and 'src/' OUT of this file
+#    so the Docker builder copies your application code and dependencies.
+# --------------------------------------------------------------------

@@ -1,0 +1,26 @@
+{
+    "total_games": [
+        4855,
+        0
+    ],
+    "mean_price": [
+        43.8612987283719,
+        0
+    ],
+    "median_price": [
+        26.97,
+        0
+    ],
+    "max_price": [
+        1019.88,
+        0
+    ],
+    "min_price": [
+        0.0,
+        0
+    ],
+    "most_common_sentiment": [
+        "2",
+        0
+    ]
+}

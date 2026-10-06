@@ -1,0 +1,34 @@
+# =========================================
+# 🚀 Text & Code Standardization (LF Enforcement)
+# =========================================
+# This tells Git to use intelligent detection, but we enforce LF for text files.
+# Most source code and documentation should be marked as text.
+* text=auto
+
+# Explicitly enforce LF for Python code and notebooks (The main focus)
+*.py text eol=lf
+*.ipynb text eol=lf
+
+# Enforce LF for documentation and configuration files
+*.md text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.cfg text eol=lf
+
+# Data files (CSV, JSON, Parquet, etc.) are often treated as text by Git
+# and the 'text=auto' above should handle them, but explicitly marking them
+# ensures consistency, especially if they are simple CSV/JSON.
+# Note: If you track very large binary files, skip this and use the binary tag below.
+*.csv text eol=lf
+*.json text eol=lf
+*.parquet text eol=lf
+
+
+# =========================================
+# 📦 Binary Handling (Use if needed)
+# =========================================
+# If you decide to track non-text assets (like compiled models, images, etc.)
+# you MUST mark them as binary to prevent Git from trying to modify line endings.
+# Example:
+# models/*.bin binary
+# images/*.png binary

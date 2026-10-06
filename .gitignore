@@ -1,0 +1,35 @@
+# -----------------------------------
+# 🐍 Python Environment & Caches
+# -----------------------------------
+# Virtual Environments (Should NEVER be committed)
+.venv/
+venv/
+
+# Python Compiled/Cache Files
+__pycache__/
+*.pyc
+*.pyd
+
+# -----------------------------------
+# 🎨 IDE & OS Files
+# -----------------------------------
+# macOS specific files
+.DS_Store
+
+# JetBrains (IntelliJ, PyCharm) IDE files
+.idea/
+
+# -----------------------------------
+# 💾 Logging & Temporary Files
+# -----------------------------------
+# Log files generated during scraping or processing
+*.log
+*.tmp
+
+# Temporary data files, if any (optional, based on workflow)
+# Example: If you generate temporary scratch files during a run
+# temp_files/
+
+# -----------------------------------
+# 🛑 Files NOT listed above WILL be tracked!
+# (This includes: data/, notebooks/, src/, app/, etc.)
